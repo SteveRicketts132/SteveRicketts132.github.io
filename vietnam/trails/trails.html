@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+/* for heads of paragraphs*/
+.inksmall{ font-family: "Ink Free"; color: "black"; font-size: 150%;}
+.posinksmall{ position: relative; top:0px; left: 100px; }
+/* position for title of left hand side paragraph*/
+
+
+.cent{ position:relative; top:0px; left:600px;}
+
+.wrapperinfo{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: minmax<100px, auto);
+}
+.infooneone{
+	grid-column: 1/3;
+	grid-row: 1;
+}
+.infoonetwo{
+	grid-column: 2 span 3;
+	grid-row: 1;
+}
+
+.marg{margin:50px;}
+
+.infotwoone{
+	grid-column: 1 span 2;
+	grid-row: 2;
+}
+.infotwotwo{
+	grid-column: 3/3;
+	grid-row: 2;
+}
+
+.infothreeone{
+	grid-column: 1/3;
+	grid-row: 3;
+}
+.infothreetwo{
+	grid-column: 2 span 3;
+	grid-row: 3;
+}
+.infofourone{
+	grid-column: 1/3;
+	grid-row: 4;
+}
+.infofourtwo{
+	grid-column: 2 span 3;
+	grid-row: 4;
+}
+
+/* picture column 1 rows 1 and 3 of hanoi or info sheet*/
+.colpic1{position: relative; top: 30px; left: 210px;}
+/* top right paragraph rows 1 and 3 hanoi or info */
+.colpara1{position: relative; top: 0px; left: -80px;}
+/* picture column 3 row 2 of hanoi or info sheet*/
+.colpic2{position: relative; top: 10px; left: 270px;}
+/* for third picture*/
+.colpic3{position:relative; top: 70px; left: 200px;}
+/* para column 3 row 2 of hanoi or info sheet*/
+.colpara2{position: relative; top: 20px; left: 180px;}
+/*title for paragraph 2*/
+.titlepara2{position:relative; top:20px; left: 280px;}
+
+/* moving signature and crest*/
+.sig{position: relative; top: 0px; left: 800px;}
+
+.solidb{ 
+	border-style: solid;
+	border-color: black;
+}
+.doubleb{border-style: double;}
+
+
+</style>
+<head>
+<div>
+	<img src="vietnam_crest.jpg" class="cent" alt="vietnam official crest" height="200" width="200">
+</div>
+<h1 class="ink" style = "text-align: center"> Hanoi - Start of the Trip </h1>
+
+</head>
+<body>
+
+
+<div class ="wrapperinfo marg doubleb">
+	<div class ="infooneone">
+		<a href="west_hcm/west_hcm.html">
+		<img src="west1.jpg" title="Click for Western Ho Chi Minh Slideshow" class="colpic1 solidb" alt="hanoi at night" height="180" width="220">
+		</a>
+	</div>
+	<div class="infoonetwo">
+		<p class="inksmall posinksmall"> 
+			<b>Western Ho Chi Minh Trail</b> 
+		</p>
+		<p class ="paragraph colpara1" style="text-indent: 5%">
+			From Phong Nhe the road to Khe San follows the route of the original West Ho Chi Minh Trail, concreted to preserve the trail.
+			It was used according to Gnoc to move men and supplies from the North to the South. Many men did not make it home, but got lost, died from disease or simply went home. However most must have made it south, or there would not have been a war.
+		</p>
+		
+	</div>
+	<div class = "infotwoone">
+		<p class="inksmall titlepara2">
+			<b>Eastern Ho Chi Minh </b>
+		</p>
+
+		<p class="paragraph colpara2" style="text-indent: 5%">
+			The Eastern Ho Chi Minh trail has been developed as an alternative to the main road from Saigon to Hanoi.At one part just outside Phong Nha - Ke Bang is follows the route of 3 Km airfield, used by the North Vietnamese airfield. Here the Honda 250s are decidedly underpowered.
+		</p>
+	</div>
+	<div class="infotwotwo colpic2">
+		<a href = "east_hcm/east_hcm.html">
+		<img src="east.jpg" alt="eastern ho chi Minh trail photo" title="click for info on the eastern Ho Chi Minh Trail" class="solidb" height="180" width="220">
+		</a>
+	</div>
+
+	<div class="infothreeone colpic3">
+		<a href ="khesan/khesan.html">
+		<img src="khesan1.jpg" title="click for more pictures on Khe San" alt="Khe San" class=" solidb" height="180" width="220">
+		</a>
+	</div>
+
+	<div class="infothreetwo">
+		<p class="inksmall posinksmall">
+			<b> Khe Sanh - Old Marine bases </b>
+		<p class="paragraph colpara1" style="text-indent: 5%">
+			Is a very depressing place, The former US marine base is a barren, desolate place now a museum. With people hawking bits of coins they have recovered. Then Vietnamese version differs from the western version. Gnoc admitted 20 000 Vietnamese lost their lives, but said the base was overrun. The western version agrees with 20 000 Vietnamese deaths, but states the base was relieved by a tank column.
+			The hotel was equally poor, with rat visiting for breakfast. Gnoc was quick to explain that were are in the topics and such things are to be expected. Still the town did sell Leicester City shirts, but only in children’s sizes. This might sound odd, but then the chairs in the cafes were children’s chairs. Vietnamese people are not big, so medium mens!
+		</p>
+	</div>
+	<div class="infofourtwo">
+		<img src="doc_stamp.jpg" class="sig" height ="150" width="200">
+		<img src="signature.png" class="sig" height="50" width="200">
+	</div>
+</div>
+</body>
+</html>

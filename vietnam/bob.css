@@ -1,0 +1,125 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+/*title of top of country page*/
+.ctitle{position: relative; top:0px; left: 350px;}
+
+.paragraph{font-family: "Courier New";}
+
+.vietnam{position: relative; top:0%; left:5%;}
+
+.bike{border-radius: 20px 40px;}
+
+/*title on first page*/
+.mtitle{position: relative; top: 0px; left: 250px;}
+
+.vietpolar{position: relative; top:0px; left:550px;}
+/*map main page*/
+.mmap{position:relative; top:0px; left: 300px;}
+
+/*right polaroids*/
+.picture1{position: relative; top:25px; left:50px;}
+
+.picture2{position: relative; top:0px; left:60px;}
+
+/* left polaroids*/
+.picture3{position: relative; top:25px; left:0px;}
+
+/* film footage*/
+.picture4{position: relative; top:30px; left:-20px;}
+
+.picture5{position: relative; top:30px; left:140px;}
+
+.picture6{position: relative; top:30px; left:100px;}
+
+.picture7{position: relative; top:30px; left:60px;}
+
+/* airmail */
+.picture8{position: relative; top:30px; left:20px;}
+
+.map{position: relative; top: 0%; left:10%;}
+
+/*top grid for the bike and text*/
+.wrapper{
+	display: grid;
+	grid-template-columns: 350px 800px;
+	grid-template-rows: minmax<100px, auto);
+}
+.one {
+	grid-column: 1/2;
+	grid-row:1;
+}
+
+.two{
+	grid-column: 2/2;
+	grid-row:1;
+}
+
+/* new wrappr for films and columns*/
+.wrapper1{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: minmax<100px, auto);
+	position: relative; top:0px; left: 100px;
+}
+.one1 {
+	grid-column: 1/5;
+	grid-row:1;
+}
+.one2 {
+	grid-column: 1/5;
+	grid-row:2;
+}
+.one3{
+	grid-column: 1/5;
+	grid-row:3;
+}
+.one4{
+	grid-column: 1/5;
+	grid-row:4;
+}
+.two2{
+	grid-column: 2/ span 4;
+	grid-row: 1/ span 3;
+}
+.two4{
+	grid-column: 2/5;
+	grid-row: 4;
+}
+.three4{
+	grid-column: 3/5;
+	grid-row: 4;
+}
+.four4{
+	grid-column: 4/5;
+	grid-row: 4;
+}
+.five1{
+	grid-column: 5/5;
+	grid-row: 1;
+}
+.five2{
+	grid-column: 5/5;
+	grid-row: 2;
+}
+.five3{
+	grid-column: 5/5;
+	grid-row: 3;
+}
+.five4{
+	grid-column: 5/5;
+	grid-row: 4;
+}
+
+</style>
+</head>
+</html>

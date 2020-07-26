@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+.wrapperinfo{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: minmax<100px, auto);
+}
+.infooneone{
+	grid-column: 1/3;
+	grid-row: 1;
+}
+.infoonetwo{
+	grid-column: 2 span 3;
+	grid-row: 1;
+}
+
+
+.infotwoone{
+	grid-column: 1 span 2;
+	grid-row: 2;
+}
+.infotwotwo{
+	grid-column: 3/3;
+	grid-row: 2;
+}
+
+.infothreeone{
+	grid-column: 1/3;
+	grid-row: 3;
+}
+.infothreetwo{
+	grid-column: 2 span 3;
+	grid-row: 3;
+}
+.infofourtwo{
+	grid-column: 2 span 3;
+	grid-row: 4;
+
+/* picture column 1 rows 1 and 3 of hanoi or info sheet*/
+.colpic1{position: relative; top: 20px; left: 180px;}
+/* top right paragraph rows 1 and 3 hanoi or info */
+.colpara1{position: relative; top: 0px; left: -80px;}
+/* picture column 3 row 2 of hanoi or info sheet*/
+.colpic2{position: relative; top: 0px; left: 270px;}
+/* para column 3 row 2 of hanoi or info sheet*/
+.colpara2{position: relative; top: 0px; left: 180px;}
+
+.solidb{ 
+	border-style: solid;
+	border-color: black;
+}
+.doubleb{border-style: double;}
+
+
+</style>
+<head>
+<div>
+	<img src="vietnam_crest.jpg" alt="vietnam official crest" height="200" width="200">
+</div>
+<h1 class="ink"> Hanoi - The Start of the Trip </h1>
+
+</head>
+<body>
+
+
+<div class ="wrapperinfo doubleb">
+	<div class ="infooneone">
+		<a href="hanoi_slideshow.html">
+		<img src="hanoi_night.jpg" class="colpic1 solidb" alt="hanoi at night" height="150" width="200">
+		</a>
+	</div>
+	<div class="infoonetwo">
+		<p class="paragraph colpara1"> The first impression is traffic chaos and the reason we did not collect our motorcycles from the hotel. But we driven to what looked like a parade ground outside the city. In the centre of the city is a large lake, where the remains of a B52 lie. There is also temple in the lake.
+
+		It is a very lively city, where you can buy first class Rolex copies, if first class copy is not a contradiction in terms. If this is your thing and it was for Lars. He bought 2 for $200 and spent the rest of the trip failing to buy some more.
+
+		So if first class copies of Rolexes is your thing, buy all the ones you want in Hanoi before you leave.
+		</p>
+	</div>
+	<div class = "infotwoone">
+		<p class="paragraph colpara2">
+		Motorcycles
+
+		Throughout Vietnam the motorcycle is generally the Minsk either the boxer twin copied from a pre war BMW or a smaller single motorcycle.
+
+		The story goes that after the first tour, the Minsks proved so unreliable that Kurt told Gnoc he had to buy some new motorcycles. Gnoc replied he would need $7 000 to buy new motorcycles. Obviously Kurt lent Gnoc the money.
+
+		The Honda 250 XL proved ideal and reliable.
+		</p>
+	</div>
+	<div class="infotwotwo colpic2">
+		<img src="vietnam_bike.png" class="solidb" height="150" width="200">
+	</div>
+
+	<div class="infothreeone colpic1">
+		<img src="scooter.jpg" class=" solidb" height="150" width="200">
+	</div>
+
+	<div class="infothreetwo">
+		<p class="paragraph colpara1">
+		Scooter / mopeds
+
+		Japanese or Chinese scooters are everywhere. Merge and weave, generally gives way to  who dares wins.
+
+		Whereas we think of a moped as a single person runaround, the Vietnamese think MPV. Five people on a scooter is the norm, with a small baby peering over the handlebars and 2 kids sandwiched between dad and mum.
+
+		To see 3 pigs rolled in leaves and strapped to the pillion seat is common, as is a wardrobe or fridge-freezer. Hanging from the pillion peg.
+		</p>
+	</div>
+</div>
+</body>
+</html>
