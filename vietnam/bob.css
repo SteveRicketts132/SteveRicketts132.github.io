@@ -14,7 +14,7 @@
 /*title of top of country page*/
 .ctitle{position: relative; top:0px; left: 350px;}
 
-.paragraph{font-family: "Courier New";}
+.paragraph{font-family: "Courier New"; font-size: 130%;}
 
 .vietnam{position: relative; top:0%; left:5%;}
 
