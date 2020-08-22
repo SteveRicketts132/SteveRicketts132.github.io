@@ -13,6 +13,7 @@ href="vietnam/bob.css">
 	border-color: black;
 }
 
+
 .wrapfront{ 
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -29,6 +30,24 @@ href="vietnam/bob.css">
 }
 
 .posfont{ position: relative; top: 0%; left: 2%;}
+
+/* hide the flags*/
+
+.hide{
+	display: none; 
+}
+
+.unhide:hover + .hide {
+	display: block;
+}
+
+.posmap{ position: absolute; top: 190%; left :15%;
+	z-index: -10; }
+
+.posvietflag{ 
+	z-index: 10;
+	position: relative; top: 250px; left: 875px;
+}
 
 </style>
 </head>
@@ -67,16 +86,16 @@ href="vietnam/bob.css">
 	
 
 <div>
-<a href="vietnam/vietnam15.html">	
-<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="200" width="150" class="vietpolar">
+<a href="vietnam/vietnam15.html" class="unhide">	
+<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="150" width="100" class="vietpolar unhide">
 </a>
+<img src = "vietnam-flag.png" class = "hide posvietflag" height ="50" width="75">
 
+</div>
+<img src="world_map.jpg" alt="travels of Bob" title = "hover over the polaroids to see where Bob has travelled to" class="posmap solidb" height="500" width="900">
 </div>
 
 
-<div>
-<img src="world_map.jpg" alt="travels of Bob" class="mmap solidb" height="550" width="750">
-</div>
 
 </body>
 </html>
