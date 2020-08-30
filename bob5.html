@@ -13,7 +13,15 @@ href="vietnam/bob.css">
 	border-color: black;
 }
 
+.clearbox{
+	box-shadow: 10px 10px 10px #454545;
+}
 
+.solidbox{
+	border-style: solid;
+	border-color: black;
+	box-shadow: 10px 10px 10px #454545;
+}
 .wrapfront{ 
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -41,12 +49,12 @@ href="vietnam/bob.css">
 	display: block;
 }
 
-.posmap{ position: absolute; top: 171%; left :15%;
+.posmap{ position: relative; top: 15%; left :15%;
 	z-index: -10; }
 
 .posvietflag{ 
 	z-index: 10;
-	position: relative; top: 250px; left: 875px;
+	position: absolute; top: 205%; left: 60%;
 }
 
 </style>
@@ -76,7 +84,7 @@ href="vietnam/bob.css">
 	</div>
 
 </div>
-<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidb" title="This is Bob" height ="450" width="550">
+<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidbox" title="This is Bob" height ="450" width="550">
 
 
 <div>
@@ -87,7 +95,7 @@ href="vietnam/bob.css">
 
 <div>
 <a href="vietnam/vietnam15.html" class="unhide">	
-<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="150" width="100" class="vietpolar unhide">
+<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="150" width="100" class="vietpolar unhide clearbox">
 </a>
 <img src = "vietnam-flag.png" class = "hide posvietflag" height ="50" width="75">
 
