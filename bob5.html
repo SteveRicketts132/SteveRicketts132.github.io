@@ -57,6 +57,48 @@ href="vietnam/bob.css">
 	position: absolute; top: 205%; left: 60%;
 }
 
+.sidenav{
+	height : 50%;
+	width: 0%;
+	position: fixed;
+	z-index: 1;
+	top: 15%;
+	left: 0%;
+	background-color: #FFFFFF;
+	overflow-x: hidden;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+	font-size: 100%;
+	color: #FF0000;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #F1F1F1;
+	
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.passportpos{
+	position: relative; top: 0%; left: 5%;
+}
+
+@media screen and (max-height: 450 px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
 </style>
 </head>
 
@@ -84,11 +126,26 @@ href="vietnam/bob.css">
 	</div>
 
 </div>
-<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidbox" title="This is Bob" height ="450" width="550">
+<div id = "mysidenav" class ="sidenav paragraph">
+	<img src = "compass.jpg" heigh = "50" width = "50"> 
+	<p style = "color: #000000"><b>Navigation</b> </p>
+	<a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+	<a href ="#">Home</a>
+	<a href ="vietnam/vietnam15.html">Vietnam main page</a>
+	<a href ="vietnam/hanoi/hanoi1.html">Hanoi (Vietnam)</a>
+	<a href ="vietnam/trails/trails.html">Khe Sanh (Vietnam)</a>
+	<a href ="vietnam/maichau/maichau.html">Mai Chau (Vietnam)</a>
+	<a href ="vietnam/hue/hue.html">Hue (Vietnam) </a>
+	<a href ="vietnam/hoann/hoann.html">Hoi an (Vietnam)</a>
+	<a href ="vietnam/nhatrang/nhatrang.html">Nha Trang (Vietnam)</a>
 
+</div>
 
 <div>
-<p style= "margin-left: 25%; font-size: 100%" class="paragraph"> Select below to find out more about Bob's travels:</p>
+<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidbox" title="This is Bob click Bob for navigation" height ="450" width="550" onclick="opennav()">
+
+
+<p style= "margin-left: 15%; font-size: 100%" class="paragraph"> Select below to find out more about Bob's travels (click on the picture for navigation):</p>
 </div>
  
 	
@@ -103,7 +160,15 @@ href="vietnam/bob.css">
 <img src="world_map.jpg" alt="travels of Bob" title = "hover over the polaroids to see where Bob has travelled to" class="posmap solidb" height="500" width="900">
 </div>
 
+<script>
+	function opennav(){
+		document.getElementById("mysidenav").style.width = "250px";
+	}
 
 
+	function closenav(){
+		document.getElementById("mysidenav").style.width = "0px";
+	}
+</script>
 </body>
 </html>
