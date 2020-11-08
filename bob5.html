@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>	 
+<meta name="msvalidate.01" content="02A3D4E1F249A26E5DE4C707C4D9B561" />
 <meta name="motorcycle diaries of bob" content="The motorcycle trips of bob throughout the world">
-<meta name="Keywords" content= "Motorcycling, travel, bob"> 
+<meta name="Keywords" content= "Motorcycling, travel, Vietnam, bob"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 type="text/css"
@@ -99,6 +100,31 @@ href="vietnam/bob.css">
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
+
+.wrapbob{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+}
+
+.rowoneonebob{
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+.rowonetwobob{
+	grid-column: 2/2;
+	grid-row: 1;
+}
+/*position of the polaroids*/
+.posvietpol{
+	position: relative; top: 0%; left: 70%;
+}
+
+.posindiapol{
+	position: relative; top: 0%; left: 5%;
+}
+
 </style>
 </head>
 
@@ -138,6 +164,8 @@ href="vietnam/bob.css">
 	<a href ="vietnam/hue/hue.html">Hue (Vietnam) </a>
 	<a href ="vietnam/hoann/hoann.html">Hoi an (Vietnam)</a>
 	<a href ="vietnam/nhatrang/nhatrang.html">Nha Trang (Vietnam)</a>
+	<a href = "india/india.html" style = "color: #000000" >India main page</a>
+	<a href = "india/delhi/delhi.html" style ="color: #000000">Delhi</a>
 
 </div>
 
@@ -150,13 +178,20 @@ href="vietnam/bob.css">
  
 	
 
-<div>
-<a href="vietnam/vietnam15.html" class="unhide">	
-<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="150" width="100" class="vietpolar unhide clearbox">
-</a>
-<img src = "vietnam-flag.png" class = "hide posvietflag" height ="50" width="75">
-
+<div class = "wrapbob">
+	<div class = "rowoneonebob">
+			<a href="vietnam/vietnam15.html">	
+			<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="200" width="150" class="unhide clearbox posvietpol">
+			</a>
+	</div>
+	<div class = "rowonetwobob">
+			<a href="india/india.html">
+			<img src="india_polaroid.jpg" title="click for the Indian adventure" height = "200" width="150" class="unhide clearbox posindiapol">
+			</a>
+	</div>
+	<br></br>
 </div>
+<br></br>
 <img src="world_map.jpg" alt="travels of Bob" title = "hover over the polaroids to see where Bob has travelled to" class="posmap solidb" height="500" width="900">
 </div>
 
