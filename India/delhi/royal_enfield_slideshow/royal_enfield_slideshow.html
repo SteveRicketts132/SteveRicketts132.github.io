@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+.posslideshow{position: absolute; top: 20px; left:270px;}
+.posbutton{position: relative; top: 0px; left: 250px;}
+.solidbslide{ 
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+.inkbutton{ 
+	font-family: "Ink Free";
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.buttonborder{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+</style>
+<head>
+<script type="text/javascript">
+thisImg=1;
+imgCt = 3;
+function newSlide(direction){
+thisImg = thisImg + direction;
+if (thisImg ==0) {thisImg = imgCt;}
+if (thisImg == imgCt+1) {thisImg = 1;}
+document.getElementById('slideshow').src = thisImg + '.jpg'; 
+}
+</script>
+
+</head>
+<div class="posslideshow">
+	<form>
+	<img src="1.jpg" id="slideshow" class="solidbslide" alt="hanoi slideshow" height="550" width="750">
+	<p class="posbutton">
+	<input type="button" value="<--Previous photo" class="inkbutton buttonborder"
+	onClick="newSlide(-1)">
+	<input type="button" value="Next photo-->" class="inkbutton buttonborder"
+	onClick="newSlide(1)">
+	</p>
+	</form>
+<div>
+</body>
+</html>
