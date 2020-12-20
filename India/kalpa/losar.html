@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+/* for heads of paragraphs*/
+.inksmall{ font-family: "Ink Free"; color: "black"; font-size: 150%;}
+.posinksmall{ position: relative; top:0%; left: 10%; }
+/* position for title of left hand side paragraph*/
+
+
+.cent{ position:relative; top:0px; left:40%;}
+
+.wrapperinfo{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: minmax<100px, auto);
+}
+.infooneone{
+	grid-column: 1/3;
+	grid-row: 1;
+}
+.infoonetwo{
+	grid-column: 2 span 3;
+	grid-row: 1;
+}
+
+.marg{margin-right: auto
+	margin-left: auto;
+}
+
+.infotwoone{
+	grid-column: 1 span 2;
+	grid-row: 2;
+}
+.infotwotwo{
+	grid-column: 3/3;
+	grid-row: 2;
+}
+
+.infothreeone{
+	grid-column: 1/3;
+	grid-row: 3;
+}
+.infothreetwo{
+	grid-column: 2 span 3;
+	grid-row: 3;
+}
+.infofourone{
+	grid-column: 1 span 2;
+	grid-row: 4;
+}
+.infofourtwo{
+	grid-column: 3/3;
+	grid-row: 4;
+}
+
+
+/* picture column 1 rows 1 and 3 of hanoi or info sheet*/
+.colpic1{position: relative; top: 5%; left: 15%;}
+/* top right paragraph rows 1 and 3 hanoi or info */
+.colpara1{position: relative; top: 0%; left: -15%;}
+/* picture column 3 row 2 of hanoi or info sheet*/
+.colpic2{position: relative; top: 0%; left: 30%;}
+/* for third picture*/
+.colpic3{position:relative; top: 5%; left: 15%;}
+/* para column 3 row 2 of hanoi or info sheet*/
+.colpara2{position: relative; top: 5%; left: 15%;}
+/*title for paragraph 2*/
+.titlepara2{position:relative; top:0%; left: 30%;}
+
+/* moving signature and crest*/
+.sig{position: relative; top: 0%; left: 15%;}
+
+.solidb{ 
+	border-style: solid;
+	border-color: black;
+}
+.doubleb{border-style: double;}
+
+
+
+</style>
+<div>
+	<a href = "https://stevericketts132.github.io/india/india.html">
+	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	</a>
+</div>
+<h1 class="ink" style = "text-align: center"> Delhi/ Motorbikes and Trains </h1>
+
+</head>
+<body>
+
+<audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
+
+<div class ="wrapperinfo marg doubleb">
+	<div class ="infooneone">
+		<a href="losar_slideshow/losar_slideshow.html">
+		<img src="rohang.jpg" title="Click for the lasar slideshow" class="colpic1 solidb" alt="The rohang pass" height="230" width="270">
+		</a>
+	</div>
+	<div class="infoonetwo">
+		<p class="inksmall posinksmall"> 
+			<b>Loasar</b> 
+		</p>
+		<p class ="paragraph colpara1" style="text-indent: 5%">
+			Just a stop on the way to Minali, but some interesting meat dumplings after the food in Kibber. The road took us over the Rohhang Pass at 4000m.
+			A local herdsman tied his yak up to our motorcycles. Hotels mean sharing a bed, curious as a room only cost £6 a night.
+		<p class="inksmall titlepara2">
+			<b>Beer</b>
+		</p>
+
+		<p class="paragraph colpara2" style="text-indent: 5%">
+			Alcohol is frowned on in India and so is expensive. There appeared to be only brand, Kingfisher. However you can buy what purports to be Scotch Whiskey at £4 a bottle or £5 for the premium brand.
+		</p>
+	</div>
+	<div class="infotwotwo colpic2">
+		<img src="kingfisher.jpg" alt="kingfisher beer" title="no more pictures of booze this one is it!! " class="solidb" height="230" width="270">
+	</div>
+	<div class="infofourtwo">
+		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
+		<img src="sachin.jpg" class="sig" height="50" width="200">
+	</div>
+</div>
+<script>
+	window.onload = function (){
+		document.getElementById("indian_summer").play()
+	}
+</script>
+</body>
+</html>

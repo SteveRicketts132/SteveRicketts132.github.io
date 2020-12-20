@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+/* for heads of paragraphs*/
+.inksmall{ font-family: "Ink Free"; color: "black"; font-size: 150%;}
+.posinksmall{ position: relative; top:0%; left: 10%; }
+/* position for title of left hand side paragraph*/
+
+
+.cent{ position:relative; top:0px; left:40%;}
+
+.wrapperinfo{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: minmax<100px, auto);
+}
+.infooneone{
+	grid-column: 1/3;
+	grid-row: 1;
+}
+.infoonetwo{
+	grid-column: 2 span 3;
+	grid-row: 1;
+}
+
+.marg{margin-right: auto
+	margin-left: auto;
+}
+
+.infotwoone{
+	grid-column: 1 span 2;
+	grid-row: 2;
+}
+.infotwotwo{
+	grid-column: 3/3;
+	grid-row: 2;
+}
+
+.infothreeone{
+	grid-column: 1/3;
+	grid-row: 3;
+}
+.infothreetwo{
+	grid-column: 2 span 3;
+	grid-row: 3;
+}
+.infofourone{
+	grid-column: 1 span 2;
+	grid-row: 4;
+}
+.infofourtwo{
+	grid-column: 3/3;
+	grid-row: 4;
+}
+
+
+/* picture column 1 rows 1 and 3 of hanoi or info sheet*/
+.colpic1{position: relative; top: 5%; left: 15%;}
+/* top right paragraph rows 1 and 3 hanoi or info */
+.colpara1{position: relative; top: 0%; left: -15%;}
+/* picture column 3 row 2 of hanoi or info sheet*/
+.colpic2{position: relative; top: 0%; left: 30%;}
+/* for third picture*/
+.colpic3{position:relative; top: 5%; left: 15%;}
+/* para column 3 row 2 of hanoi or info sheet*/
+.colpara2{position: relative; top: 5%; left: 15%;}
+/*title for paragraph 2*/
+.titlepara2{position:relative; top:0%; left: 30%;}
+
+/* moving signature and crest*/
+.sig{position: relative; top: 0%; left: 15%;}
+
+.solidb{ 
+	border-style: solid;
+	border-color: black;
+}
+.doubleb{border-style: double;}
+
+
+
+</style>
+<div>
+	<a href = "https://stevericketts132.github.io/india/india.html">
+	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	</a>
+</div>
+<h1 class="ink" style = "text-align: center"> Kibber and Tabo </h1>
+
+</head>
+<body>
+
+<audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
+
+<div class ="wrapperinfo marg doubleb">
+	<div class ="infooneone">
+		<a href="kibber_slideshow/kibber_slideshow.html">
+		<img src="kibber.jpg" title="Click for kibber Slideshow" class="colpic1 solidb" alt="The remote kibber" height="230" width="270">
+		</a>
+	</div>
+	<div class="infoonetwo">
+		<p class="inksmall posinksmall"> 
+			<b>Kibber</b> 
+		</p>
+		<p class ="paragraph colpara1" style="text-indent: 5%">
+			At 4000m and arguably one of the more remote Himalayan villages, it is famed for being the home of the snow leopard. Which we only saw stuffed abomilly in a monastery. There is always a low point on a tour and this was it. Cold and dark at night. Boiled egg curry and no beer. The rooms were only half finshed.
+	</div>
+	<div class = "infotwoone">
+		<p class="inksmall titlepara2">
+			<b>Tabo</b>
+		</p>
+
+		<p class="paragraph colpara2" style="text-indent: 5%">
+			Another stop on the way to somewhere. It is the site of an ancient Buddhist temple, which looks like nothing from the outside, to dissuade Muslim hoards from attacking it in the past. The inside is covered in fantastic paintings, which a monk is happy to explain to you, in perfect English.Carving on stones is interesting. Being so far from light pollution watching the stars from the roof of the hotel, is well worth it.
+		</p>
+	</div>
+	<div class="infotwotwo colpic2">
+		<a href = "tabo_slideshow/tabo_slideshow.html">
+		<img src="tabo.jpg" alt="tabo monastery" title="click for more from tabo " class="solidb" height="230" width="270">
+		</a>
+	</div>
+	<div class="infofourtwo">
+		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
+		<img src="sachin.jpg" class="sig" height="50" width="200">
+	</div>
+</div>
+<script>
+	window.onload = function (){
+		document.getElementById("indian_summer").play()
+	}
+</script>
+</body>
+</html>
