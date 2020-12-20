@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.paragraph{font-family: "Courier New";}
+.ink{font-family: "Ink Free";}
+/* for heads of paragraphs*/
+.inksmall{ font-family: "Ink Free"; color: "black"; font-size: 150%;}
+.posinksmall{ position: relative; top:0%; left: 10%; }
+/* position for title of left hand side paragraph*/
+
+
+.cent{ position:relative; top:0px; left:40%;}
+
+.wrapperinfo{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: minmax<100px, auto);
+}
+.infooneone{
+	grid-column: 1/3;
+	grid-row: 1;
+}
+.infoonetwo{
+	grid-column: 2 span 3;
+	grid-row: 1;
+}
+
+.marg{margin-right: auto
+	margin-left: auto;
+}
+
+.infotwoone{
+	grid-column: 1 span 2;
+	grid-row: 2;
+}
+.infotwotwo{
+	grid-column: 3/3;
+	grid-row: 2;
+}
+
+.infothreeone{
+	grid-column: 1/3;
+	grid-row: 3;
+}
+.infothreetwo{
+	grid-column: 2 span 3;
+	grid-row: 3;
+}
+.infofourone{
+	grid-column: 1 span 2;
+	grid-row: 4;
+}
+.infofourtwo{
+	grid-column: 3/3;
+	grid-row: 4;
+}
+
+
+/* picture column 1 rows 1 and 3 of hanoi or info sheet*/
+.colpic1{position: relative; top: 5%; left: 15%;}
+/* top right paragraph rows 1 and 3 hanoi or info */
+.colpara1{position: relative; top: 0%; left: -15%;}
+/* picture column 3 row 2 of hanoi or info sheet*/
+.colpic2{position: relative; top: 0%; left: 30%;}
+/* for third picture*/
+.colpic3{position:relative; top: 5%; left: 15%;}
+/* para column 3 row 2 of hanoi or info sheet*/
+.colpara2{position: relative; top: 5%; left: 15%;}
+/*title for paragraph 2*/
+.titlepara2{position:relative; top:0%; left: 30%;}
+
+/* moving signature and crest*/
+.sig{position: relative; top: 0%; left: 15%;}
+
+.solidb{ 
+	border-style: solid;
+	border-color: black;
+}
+.doubleb{border-style: double;}
+
+
+
+</style>
+<div>
+	<a href = "https://stevericketts132.github.io/india/india.html">
+	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	</a>
+</div>
+<h1 class="ink" style = "text-align: center"> Delhi/ Motorbikes and Trains </h1>
+
+</head>
+<body>
+
+<audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
+
+<div class ="wrapperinfo marg doubleb">
+	<div class ="infooneone">
+		<a href="kalpa_slideshow/kalpa_slideshow.html">
+		<img src="kalpa.jpg" title="Click for shima Slideshow" class="colpic1 solidb" alt="The beautiful Shimla" height="230" width="270">
+		</a>
+	</div>
+	<div class="infoonetwo">
+		<p class="inksmall posinksmall"> 
+			<b>Kalpa</b> 
+		</p>
+		<p class ="paragraph colpara1" style="text-indent: 5%">
+			The town is at 3000m surrounded by apple orchards. We stayed in a 5 storey hotel overlooking Mount Kailash. Interestingly the beer was kept was on the ground floor, but the bar was on the 5th overlooking the mountains. In the mornings you can watch the sunrise over Kailash. The owner of the hotel was a really kind man called Lawrence, who was exceedingly hospitable and offered munches, if he considered us hungry. He also seemed to have an endless supply of Indian whiskey called 100 Pipers. On our visit it became like a scene from Black Adder, with the Bishop of Bath and Wells. In our case it has the local budist lama, where we offered beer to stay in our rooms and not meet the said priest. Obviously a potentially drunken group of Brits and Aussies would have been too much.
+	</div>
+	<div class = "infotwoone">
+		<p class="inksmall titlepara2">
+			<b>People</b>
+		</p>
+
+		<p class="paragraph colpara2" style="text-indent: 5%">
+			Indian people really dislike the British Government, but are generally really caring people. The legacy of the Raj.There were many acts of spontaneous kindness. A man on the train I was talking to, made a policeman get off the train and buy me lunch. My son asked a Hotel Owner where he could get his rucksack mended. The man asked if he was attached to the rucksack and gave him a new rucksack. Lorry drivers gave us dust masks.The dislike of Britain is strange because everywhere there are reminders. School children in grey flannel trousers, school ties, shiny black shoes waiting walking to school. Immaculate lawyers in black miniskirts and gowns, on the way to court. Everywhere signs in Englis
+		</p>
+	</div>
+	<div class="infotwotwo colpic2">
+		<a href = "people_slideshow/people_slideshow.html">
+		<img src="people.jpg" alt="Glamping" title="click for more Glamping " class="solidb" height="230" width="270">
+		</a>
+	</div>
+	<div class="infofourtwo">
+		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
+		<img src="sachin.jpg" class="sig" height="50" width="200">
+	</div>
+</div>
+<script>
+	window.onload = function (){
+		document.getElementById("indian_summer").play()
+	}
+</script>
+</body>
+</html>
