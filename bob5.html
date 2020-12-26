@@ -97,6 +97,19 @@ href="vietnam/bob.css">
 	position: relative; top: 0%; left: 5%;
 }
 
+/*class for the bob pic so can make it responsive*/
+.bobpicsize{
+	height: 35%;
+	width: 40%;
+}
+
+.worldmapsize{
+	height: 60%;
+	width: 70%;
+}
+
+
+
 @media screen and (max-height: 450 px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
@@ -126,30 +139,66 @@ href="vietnam/bob.css">
 	position: relative; top: 0%; left: 5%;
 }
 
+
+@media screen and (max-width: 450px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.sizetitle{
+		width: 100%; height: auto;
+	}
+	/*move che to top and font beneath*/
+	.reswrapfront{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.resoneone{
+		grid-column: 1/1;
+		grid-row: 1/2;
+	}
+	.resonetwo{
+		grid-column: 1/1;
+		grid-row: 2/2;
+	}
+	.resposche{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.respospol{
+		position: relative; top: 0%; left: 40%;
+	}
+}
+
 </style>
-</head>
 
 <body>
 
 
-<img src="Title.jpg" alt="title" class="mtitle">
+<img src="Title.jpg" alt="title" class="mtitle respostitle sizetitle">
 
 <h1 style= "text-align:center;"> The Motor Cycle Diaries of Bob </h1>
 
 <div>
+</head>
 
 <script async src="https://cse.google.com/cse.js?cx=f4747b9b8f2c1cde6"></script>
-	<div id="cse" style="width: 30%; margin-left: 35%;">
+	<div id="cse" style="width: 40%; margin-left: 35%;">
 	<div class="gcse-search"></div>
 
 </div>
 
-<div class = "wrapfront">
-	<div class ="rowoneone">
-		<img src="Che-Guevara.jpg" class="solidb" alt="This is not Bob" title="This is not Bob!!" height="130" width="130">
+<div class = "wrapfront reswrapfront">
+	<div class ="rowoneone resoneone">
+		<img src="Che-Guevara.jpg" class="solidb resposche" alt="This is not Bob" title="This is not Bob!!" height="130" width="130">
 	</div>	
-	<div class = "rowonetwothree">
- 		<p class ="paragraph posfont" style="font-size: 100%">This website shamelesses steals from the more famous motorcycle diaries of Che Guevara to get some more hits.  Unlike the more famous diaries this does not end up in revolution in Cuba, but allows me to share my adventures with you. As I have gotten older and possibly wiser, my son has become semi independent and so I am able to indulge my two passions of motorcycling and travel and I have catelogued them here.  This website is an odd one as it does not aim to sell you anything and exists as my son wished to write a website in the coronavirus lockdown (blame him for IT gliches N.b It is also still being built so will evolve with time). Hope you enjoy!! </p>
+	<div class = "rowonetwothree resonetwo">
+ 		<p class ="paragraph posfont resfontsize">This website shamelesses steals from the more famous motorcycle diaries of Che Guevara to get some more hits.  Unlike the more famous diaries this does not end up in revolution in Cuba, but allows me to share my adventures with you. As I have gotten older and possibly wiser, my son has become semi independent and so I am able to indulge my two passions of motorcycling and travel and I have catelogued them here.  This website is an odd one as it does not aim to sell you anything and exists as my son wished to write a website in the coronavirus lockdown (blame him for IT gliches N.b It is also still being built so will evolve with time). Hope you enjoy!! </p>
 	</div>
 
 </div>
@@ -172,29 +221,29 @@ href="vietnam/bob.css">
 </div>
 
 <div>
-<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidbox" title="This is Bob click Bob for navigation" height ="450" width="550" onclick="opennav()">
+<img src="bob_bike.jpg" alt="This is Bob" class="ctitle solidbox bobpicsize respostitle sizetitle" title="This is Bob click Bob for navigation" onclick="opennav()">
 
 
-<p style= "margin-left: 15%; font-size: 100%" class="paragraph"> Select below to find out more about Bob's travels (click on the picture for navigation):</p>
+<p style= "margin-left: 15%;" class="paragraph resfontsize"> Select below to find out more about Bob's travels (click on the picture for navigation):</p>
 </div>
  
 	
 
-<div class = "wrapbob">
-	<div class = "rowoneonebob">
+<div class = "wrapbob reswrapfront">
+	<div class = "rowoneonebob resoneone">
 			<a href="vietnam/vietnam15.html">	
-			<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="200" width="150" class="unhide clearbox posvietpol">
+			<img src="vetnam_polaroid.jpg" title="Click through to find out about the Vietnam trip" height="200" width="150" class="unhide respospol clearbox posvietpol">
 			</a>
 	</div>
-	<div class = "rowonetwobob">
+	<div class = "rowonetwobob resonetwo">
 			<a href="India/india.html">
-			<img src="india_polaroid.jpg" title="click for the Indian adventure" height = "200" width="150" class="unhide clearbox posindiapol">
+			<img src="india_polaroid.jpg" title="click for the Indian adventure" height = "200" width="150" class="unhide clearbox posindiapol respospol">
 			</a>
 	</div>
 	<br></br>
 </div>
 <br></br>
-<img src="world_map.jpg" alt="travels of Bob" title = "hover over the polaroids to see where Bob has travelled to" class="posmap solidb" height="500" width="900">
+<img src="world_map.jpg" alt="travels of Bob" title = "hover over the polaroids to see where Bob has travelled to" class="worldmapsize posmap solidb respostitle sizetitle">
 </div>
 
 <script>
