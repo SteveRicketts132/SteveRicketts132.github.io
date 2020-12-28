@@ -12,84 +12,188 @@ href="bob.css">
 .clearbox{
 	box-shadow: 10px 10px 10px #454545;
 }
+
+.sizetitle{
+	width: 60%;
+	height: 30%;
+}
+
+.sizepolaroid{
+	width: 20%;
+	height: 70%;
+}
+
+.sizepolaroid1{
+	width: 40%;
+	height: 70%;
+}
+
+.sizevietmap{
+	width: 50%;
+	height: 90%;
+}
+
+@media screen and (min-width: 600px){
+	.invisfullscreen{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 450px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapbikepara{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+
+	.resbikeparaoneone{
+		grid-column: 1;
+		grid-row: 1/2;
+	}
+
+	.resbikeparaonetwo{
+		grid-column: 1;
+		grid-row: 2/2;
+	}
+
+	.reswrappola{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resoneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resoneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+}
 </style>
 
 </head>
 <div>
-<img src="MDOB Vietnam.gif" class="ctitle" wigth="400" height="250">
+<img src="MDOB Vietnam.gif" class="ctitle sizetitle ressizetitle respostitle">
 </div>
 <h1>
 </h1>
 <body>
 <audio id="good_morning" src="good_morning.mp3"></audio>
 <div>
-<div class="wrapper">
-	<div class="one">
+<div class="wrapper reswrapbikepara">
+	<div class="one resbikeparaoneone">
 		<img src="vietnam_bike.jpg" class="vietnam bike" alt="Honda 250XL" title="Bob's trusty steed in vietnam the Honda 250XL" height="200" width="300">
 	</div>
-	<div class="two">	
-		<p class="paragraph" style="text-indent: 5%; font-size: 100%;">
+	<div class="two resbikeparaonetwo">	
+		<p class="paragraph resfontsize" style="text-indent: 5%;">
 		In this MDOB test, Bob travels to Vietnam, riding from Hanoi to Ho Chi Min city (previously known as Saigon). Checking out along the way places like Hoi An, and also areas such as the tunnels and places left in the war. The bike chosen for the ride was a trusty Honda 250XL, see picture on the left. This was easily able to deal with the semi rough terrain. Not unsurprisingly Bob describes the weather as Hot <q>Damn Hot</q>. Fortunately a thirst quenching beer costs around 4p or 1000VND in the local currency Vietnamese Dong (No sniggering westerners!!) and a million dong is around 40 (UK pounds). To find out more click the polaroids and check out videos at the bottom.  </p>
 	</div>
 </div>
 <div>
 
-<div class="wrapper1">
-	<div class="one1">
+<div class="wrapper1 reswrappola">
+	<div class="one1 resoneone">
 		<a href="hanoi/hanoi1.html">
-		<img src="hanoi_polaroid.jpg" alt="hoian polaroid" title="Click for information on hoian" class="picture3 clearbox" height="200" width="150">
+		<img src="hanoi_polaroid.jpg" alt="hoian polaroid" title="Click for information on hoian" class="picture3 clearbox resposmiddle" height="200" width="150">
 		</a>
 	</div>
-	<div class="one2">
+	<div class="one2 resonetwo">
 		<a href = "maichau/maichau.html">
-		<img src="maichau_polaroid.jpg" class="picture3 clearbox" title="Click for information on Mai Chau, roads and hotels" height="200" width="150">
+		<img src="maichau_polaroid.jpg" class="picture3 clearbox resposmiddle" title="Click for information on Mai Chau, roads and hotels"height="200" width="150">
 		</a>
 	</div>
-	<div class="one3">
+	<div class="one3 resonethree">
 		<a href="hoann/hoann.html">
-		<img src="hoian.gif" class="picture3 clearbox" title="Click for the beach and suits" height="200" width="150">
+		<img src="hoian.gif" class="picture3 clearbox resposmiddle" title="Click for the beach and suits" height="200" width="150">
 		</a>
 	</div>
-	<div class="one4">
+	<div class="one4 invis">
 		<img src="film_footage.gif" class="picture4 clearbox" alt="film icon" height="100" width="150">
 	</div>
-	<div class="two2">
-		<img src="vietnam_map.gif" class="map" height="700" width ="550">
+	<div class="two2 invis">
+		<img src="vietnam_map.gif" class="map" height = "750" width = "550">
 	</div>
-	<div class="two4">
+	<div class="two4 invis">
 		<a href="video1.html">
 		<img src="after_breakfast1.gif" class="picture7 " alt="apocalypse now" title="click to view film" height="100" width="200">
 		</a>
 	</div>
-	<div class="three4">
+	<div class="three4 invis">
 		<a href="full_metal_cardigan.html">
 		<img src="full_metal1.gif" class="picture6" alt="full metal cardigan" title="click to view film" height="100" width="200">
 		</a>
 	</div>
-	<div class="four4">
+	<div class="four4 invis">
 		<a href="good_night_vietnam.html">
 		<img src="good_night_vietnam1.gif" title="click to view good night vietnam" class="picture5" title="click to view film" alt="Good night vietnam" height="100" width="200">
 		</a>
 	</div>
-	<div class="five1">
+	<div class="five1 resonefour">
 		<a href="trails/trails.html">
-		<img src="khe sanh.gif" title="click for information on the Ho Chi Minh Trails" class="picture1 clearbox" height="200" width="150">
+		<img src="khe sanh.gif" title="click for information on the Ho Chi Minh Trails" class="picture1 clearbox resposmiddle" height="200" width="150" >
 		</a>
 	</div>
-	<div class="five2">
+	<div class="five2 resonefive">
 		<a href="hue/hue.html">
-		<img src="hue_polaroid.jpg" class="picture1 clearbox" title="click for more information on Hue" height="200" width="150">
+		<img src="hue_polaroid.jpg" class="picture1 clearbox resposmiddle" title="click for more information on Hue" height="200" width="150">
 		</a>
 	</div>
-	<div class="five3">
+	<div class="five3 resonesix">
 		<a href = "nhatrang/nhatrang.html">
-		<img src="nhatrang_polaroid.jpg" class="picture1 clearbox" title="click for nhatrang and geography" height="200" width="150">
+		<img src="nhatrang_polaroid.jpg" class="picture1 clearbox resposmiddle" title="click for nhatrang and geography"height="200" width="150">
 		</a>
 	</div>
-	<div class="five4">
+	<div class="five4 invis">
 		<a href="mailto: rickettsstevo1@gmail.com subject = Send in your comments to Bob">
 		<img src="airmail3.gif" class="picture8" alt="comment icon" title="send us an email" height="100" width="200">
 		</a>
+	</div>
+	<div class ="resoneseven resposmiddle invisfullscreen">
+		<p>Film Footage:</p>
+		<a href="video1.html"> Apocalypse After Breakfast </a>
+		<br>
+		<a href="full_metal_cardigan.html"> Full Metal Cardigan </a>
+		<br>
+		<a href="good_night_vietnam.html"> Good Night Vietnam </a>
+
 	</div>
 </div>
 
