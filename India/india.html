@@ -12,60 +12,154 @@ href="india.css">
 .clearbox{
 	box-shadow: 10px 10px 10px #454545;
 }
+
+.sizetitle{
+	width: 60%;
+	height: 30%;
+}
+
+.sizepolaroid{
+	width: 20%;
+	height: 70%;
+}
+
+.sizepolaroid1{
+	width: 40%;
+	height: 70%;
+}
+
+.sizevietmap{
+	width: 50%;
+	height: 90%;
+}
+
+@media screen and (min-width: 600px){
+	.invisfullscreen{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapbikepara{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+
+	.resbikeparaoneone{
+		grid-column: 1;
+		grid-row: 1/2;
+	}
+
+	.resbikeparaonetwo{
+		grid-column: 1;
+		grid-row: 2/2;
+	}
+
+	.reswrappola{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resoneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resoneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+}
 </style>
 
 </head>
 <div>
-<img src="MDOB_India.jpg" class="ctitle" wigth="400" height="250">
+<img src="MDOB_India.jpg" class="ctitle ctitle sizetitle ressizetitle respostitle">
 </div>
 <h1>
 </h1>
 <body>
 <audio id="good_morning" src="good_morning.mp3"></audio>
 <div>
-<div class="wrapper">
-	<div class="one">
+<div class="wrapper reswrapbikepara">
+	<div class="one resbikeparaoneone">
 		<img src="royal_enfield.jpg" class="vietnam bike" alt="Royal enfield bullet" title="A pimped out version of Bob's ride a royal endield bullet" height="200" width="300">
 	</div>
-	<div class="two">	
-		<p class="paragraph" style="text-indent: 5%; font-size: 100%;">
+	<div class="two resbikeparaonetwo">	
+		<p class="paragraph resfontsize" style="text-indent: 5%;">
 		I have travelled extensively in Europe, so I thought I was ready to go further a field. My grand father had served in India before the First World War. My Uncle served on a ship based in India and my father in law appeared to ride motorcycles around India, serving with the army after the end of the Second World War. TV programmes – Top Gear for one- cemented the idea of going to India, as well as people at work’s stories of visiting relatives, in India. In the planning it appeared my son and nephew would accompany me, so what could go wrong? Well high siding and sliding down a grass cliff, hitting a bus amongst other mishaps. It took me 2 weeks to get my head around motorcycling in India, but then again my father in law told stories of crashing into a ditch! So I should have been warned.  </p>
 	</div>
 </div>
 <div>
 
-<div class="wrapper1">
-	<div class="one1">
+<div class="wrapper1 reswrappola">
+	<div class="one1 resoneone">
 		<a href="delhi/delhi.html">
-		<img src="delhi_polaroid.jpg" alt="india polaroid" title="Click for information on delhi" class="picture3 clearbox" height="200" width="150">
+		<img src="delhi_polaroid.jpg" alt="india polaroid" title="Click for information on delhi" class="picture3 clearbox resposmiddle" height="200" width="150">
 		</a>
 	</div>
-	<div class="one2">
+	<div class="one2 resonetwo">
 		<a href = "losar/losar.html">
-		<img src="losar_polaroid.jpg" class="picture3 clearbox" title="Click for information on losar and booze" height="200" width="150">
+		<img src="losar_polaroid.jpg" class="picture3 clearbox resposmiddle" title="Click for information on losar and booze" height="200" width="150">
 		</a>
 	</div>
-	<div class="one3">
+	<div class="one3 resonethree">
 		<a href="kalpa/kalpa.html">
-		<img src="kalpa_polaroid.jpg" class="picture3 clearbox" title="Click for the beach and suits" height="200" width="150">
+		<img src="kalpa_polaroid.jpg" class="picture3 clearbox resposmiddle" title="Click kalpa" height="200" width="150">
 		</a>
 	</div>
-	<div class="two2">
+	<div class="two2 invis">
 		<img src="india_map.jpg" class="map" height="700" width ="600">
 	</div>
-	<div class="five1">
+	<div class="five1 resonefour">
 		<a href="shimla/shimla.html">
-		<img src="Shimla_polaroid.jpg" title="Coming soon" class="picture1 clearbox" height="200" width="150">
+		<img src="Shimla_polaroid.jpg" title="Click for the beautiful shimla and minkeys" class="picture1 clearbox resposmiddle" height="200" width="150">
 		</a>
 	</div>
-	<div class="five2">
+	<div class="five2 resonefive">
 		<a href="kibber/kibber.html">
-		<img src="kibber_polaroid.jpg" class="picture1 clearbox" title="click for more information on Hue" height="200" width="150">
+		<img src="kibber_polaroid.jpg" class="picture1 clearbox resposmiddle" title="click for the isolated kibber" height="200" width="150">
 		</a>
 	</div>
-	<div class="five3">
+	<div class="five3 resonesix">
 		<a href = "minali/minali.html">
-		<img src="minali_polaroid.jpg" class="picture1 clearbox" title="click for nhatrang and geography" height="200" width="150">
+		<img src="minali_polaroid.jpg" class="picture1 clearbox resposmiddle" title="click for minali the end of the trip" height="200" width="150">
 		</a>
 	</div>
 
