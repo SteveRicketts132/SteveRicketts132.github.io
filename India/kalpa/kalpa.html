@@ -80,12 +80,75 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 450px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
 
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 0%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
 
 </style>
 <div>
 	<a href = "https://stevericketts132.github.io/india/india.html">
-	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	<img src="Indian_Service_Logo.png" class="cent resposcrest" title = "home button" alt="india official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Kalpa and People </h1>
@@ -95,34 +158,34 @@
 
 <audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="kalpa_slideshow/kalpa_slideshow.html">
 		<img src="kalpa.jpg" title="Click for shima Slideshow" class="colpic1 solidb" alt="The beautiful Shimla" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
 			<b>Kalpa</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resfontsize resposmiddle" style="text-indent: 5%">
 			The town is at 3000m surrounded by apple orchards. We stayed in a 5 storey hotel overlooking Mount Kailash. Interestingly the beer was kept was on the ground floor, but the bar was on the 5th overlooking the mountains. In the mornings you can watch the sunrise over Kailash. The owner of the hotel was a really kind man called Lawrence, who was exceedingly hospitable and offered munches, if he considered us hungry. He also seemed to have an endless supply of Indian whiskey called 100 Pipers. On our visit it became like a scene from Black Adder, with the Bishop of Bath and Wells. In our case it has the local budist lama, where we offered beer to stay in our rooms and not meet the said priest. Obviously a potentially drunken group of Brits and Aussies would have been too much.
 	</div>
-	<div class = "infotwoone">
-		<p class="inksmall titlepara2">
+	<div class = "infotwoone resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>People</b>
 		</p>
 
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resfontsize resposmiddle" style="text-indent: 5%">
 			Indian people really dislike the British Government, but are generally really caring people. The legacy of the Raj.There were many acts of spontaneous kindness. A man on the train I was talking to, made a policeman get off the train and buy me lunch. My son asked a Hotel Owner where he could get his rucksack mended. The man asked if he was attached to the rucksack and gave him a new rucksack. Lorry drivers gave us dust masks.The dislike of Britain is strange because everywhere there are reminders. School children in grey flannel trousers, school ties, shiny black shoes waiting walking to school. Immaculate lawyers in black miniskirts and gowns, on the way to court. Everywhere signs in Englis
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "people_slideshow/people_slideshow.html">
 		<img src="people.jpg" alt="Glamping" title="click for more Glamping " class="solidb" height="230" width="270">
 		</a>
 	</div>
-	<div class="infofourtwo">
+	<div class="infofourtwo invis">
 		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="sachin.jpg" class="sig" height="50" width="200">
 	</div>
