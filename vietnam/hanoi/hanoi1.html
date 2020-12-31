@@ -80,13 +80,77 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 2%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
 
 
 </style>
 <head>
 <div>
 	<a href ="https://stevericketts132.github.io/vietnam/vietnam15.html">
-	<img src="vietnam_crest.jpg" class="cent" title ="home button" alt="vietnam official crest" height="200" width="200">
+	<img src="vietnam_crest.jpg" class="cent resposcrest" title ="home button" alt="vietnam official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Hanoi - Start of the Trip </h1>
@@ -96,51 +160,51 @@
 
 <audio id = "paint_it_black" src = "paint_ It_ black.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="hanoi_slideshow.html">
 		<img src="hanoi_night.jpg" title="Click for Hanoi Slideshow" class="colpic1 solidb" alt="hanoi at night" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
-			<b>Hanoi - The first leg of the Trip</b> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
+			<b>Hanoi</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			The first impression is traffic chaos and the reason we did not collect our motorcycles from the hotel, but we were driven to what looked like a parade ground outside the city. In the centre of the city is a large lake, where the remains of a B52 lie. There is also temple in the lake. It is a very lively city, where you can buy first class Rolex copies, if first class copy is not a contradiction in terms. If this is your thing and it was for Lars, buy all the ones you want in Hanoi before you leave. (Click the crest at the top to return to vietnam page)
 		</p>
 		
 	</div>
-	<div class = "infotwoone">
-		<p class="inksmall titlepara2">
+	<div class = "infotwoone resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Motorcycles of Vietnam </b>
 		</p>
 
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resfontsize resposmiddle" style="text-indent: 5%">
 			Throughout Vietnam the motorcycle is generally the Minsk either the boxer twin copied from a pre war BMW or a smaller single motorcycle.
 			The story goes that after the first tour, the Minsks proved so unreliable that Kurt told Gnoc he had to buy some new motorcycles. Gnoc replied he would need $7 000 to buy new motorcycles. Obviously Kurt lent Gnoc the money.The Honda 250 XL proved ideal and reliable.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "motorcycle/motorcycle_slideshow.html">
 		<img src="vietnam_bike.png" title="click for more bikes" class="solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreeone colpic3">
+	<div class="infothreeone colpic3 resinfoonefive resposinfopics">
 		<a href ="scooter/scooter_slideshow.html">
 		<img src="scooter.jpg" title="click for more scooter madness" class=" solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreetwo">
-		<p class="inksmall posinksmall">
+	<div class="infothreetwo resinfoonesix">
+		<p class="inksmall posinksmall restitlepara">
 			<b> Scooters and Mopeds - Everywhere</b>
-		<p class="paragraph colpara1" style="text-indent: 5%">
+		<p class="paragraph colpara1 resfontsize resposmiddle" style="text-indent: 5%">
 			Scooter / mopeds Japanese or Chinese scooters are everywhere. Merge and weave, generally gives way to who dares wins. Whereas we think of a moped as a single person run-around, the Vietnamese think MPV. Five people on a scooter is the norm, with a small baby peering over the handlebars and 2 kids sandwiched between dad and mum. To see 3 pigs rolled in leaves and strapped to the pillion seat is common, as is a wardrobe or fridge-freezer, hanging from the pillion peg!
 		</p>
 	</div>
-	<div class="infofourtwo">
+	<div class="infofourtwo invis">
 		<img src="doc_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="signature.png" class="sig" height="50" width="200">
 	</div>

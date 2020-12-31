@@ -80,12 +80,77 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 2%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
+
 
 
 </style>
 <div>
 	<a href = "https://stevericketts132.github.io/india/india.html">
-	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	<img src="Indian_Service_Logo.png" class="cent resposcrest" title = "home button" alt="india official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Delhi/ Motorbikes and Trains </h1>
@@ -95,32 +160,32 @@
 
 <audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="losar_slideshow/losar_slideshow.html">
 		<img src="rohang.jpg" title="Click for losar Slideshow" class="colpic1 solidb" alt="The rohang pass" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
-			<b>Loasar</b> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
+			<b>Losar</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			Just a stop on the way to Minali, but some interesting meat dumplings after the food in Kibber. The road took us over the Rohhang Pass at 4000m.
 			A local herdsman tied his yak up to our motorcycles. Hotels mean sharing a bed, curious as a room only cost &pound;6 a night.
-		<p class="inksmall titlepara2">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Beer</b>
 		</p>
 	</div>
-	<div>
-		<p class="paragraph colpara2" style="text-indent: 5%">
+	<div class = "resinfoonefour">
+		<p class="paragraph colpara2 resposmiddle resfontsize" style="text-indent: 5%">
 			Alcohol is frowned on in India and so is expensive. There appeared to be only brand, Kingfisher. However you can buy what purports to be Scotch Whiskey at &pound;4 a bottle or &pound;5 for the premium brand.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<img src="Kingfisher.jpg" alt="kingfisher beer" title= "The only booz picture" class="solidb" height="230" width="270">
 	</div>
-	<div class="infofourtwo">
+	<div class="infofourtwo invis">
 		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="sachin.jpg" class="sig" height="50" width="200">
 	</div>

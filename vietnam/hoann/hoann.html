@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 .paragraph{font-family: "Courier New";}
 .ink{font-family: "Ink Free";}
 /* for heads of paragraphs*/
@@ -87,11 +87,79 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resinfooneeight{
+		grid-column: 1;
+		grid-row: 8;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 2%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
 
 </style>
 <div>
 	<a href = "https://stevericketts132.github.io/vietnam/vietnam15.html">
-	<img src="vietnam_crest.jpg" class="cent" title = "home button" alt="vietnam official crest" height="200" width="200">
+	<img src="vietnam_crest.jpg" class="cent resposcrest" title = "home button" alt="vietnam official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Hoi An, Pho Nha - Khe Bang, </h1>
@@ -101,65 +169,65 @@
 
 <audio id = "paint_it_black" src = "paint_ It_ black.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="hoian/hoian.html">
 		<img src="hoann1.jpg" title="Click for Hoi An Slideshow" class="colpic1 solidb" alt="hoi an at night" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
 			<b>Ho Ann - Suits you Sir!!</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			Is the famous city where you can have suit made over night, in an endless choice of materials.Of a night the city comes alive along the river, with candle boats and rock bands.
 			It is also where the Danes had had enough of my attempts to grow a beard and I was led by Lars to the barbers for a shave. It cost 100 000 VND, but then it is difficult to argue with a man with a razor to your throat! I loved the city. (Click the crest at the top to return to vietnam page.)
 		</p>
 		
 	</div>
-	<div class = "infotwoone">
-		<p class="inksmall titlepara2">
+	<div class = "infotwoone resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Phong Nha - Ke Bang</b>
 		</p>
 
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resposmiddle resfontsize" style="text-indent: 5%">
 			This is a real tourist spot. Back packers arrive and leave on the sleeping buses. Gnoc advised against such travel, as the drivers take amphetamines to stay awake and accidents are common.People come to see the cave, which you enter on boats made from the steel used by the Americans to line their runways. During the war, people sheltered in the cave to escape the air raids. Deeper in the cave was Vietnamese arms dump. This exposed the people to attempts by the American with gas. On a happier note, in the town is Fuc Dat&apos;s Shop. Disappointingly it was closed for the night before we spotted it and did not open until after we left.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "phongnha/phongnha.html">
 		<img src="phongnha.jpg" title="Click for pictures of Phong Nha" class="solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreeone colpic3">
+	<div class="infothreeone colpic3 resinfoonefive resposinfopics">
 		<a href ="dong/dong.html">
 		<img src="dong.jpg" title="click for pictures of dong" class=" solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreetwo">
-		<p class="inksmall posinksmall">
+	<div class="infothreetwo resinfoonesix">
+		<p class="inksmall posinksmall restitlepara">
 			<b> Dong</b>
-		<p class="paragraph colpara1" style="text-indent: 5%">
+		<p class="paragraph colpara1 resfontsize resposmiddle" style="text-indent: 5%">
 			The Vietnamese currency is the Dong. You can order it in the UK and you get 5 000 000 for &pound;200.00. You can make someone a millionaire by lending them &pound; 40.00!
 			You barter for goods, which is taken in good humour. I wanted a <q>Good Morning Vietnam</q> t shirt and the girl followed me around the market to visit her stall. They wanted 500 000 VND. I offered 200 000 VND, but they would not budge. I walked away and they chased after me. I paid 200 000 VND. However the Tshirt shrunk on the first wash and is now child&apos;s size or medium Vietnamese men&apos;s! Serves me right.
 		</p>
 	</div>
-	<div class="infofourone">
-		<p class="inksmall titlepara2">
+	<div class="infofourone resinfooneeight">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Quang Tri </b>
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resfontsize resposmiddle" style="text-indent: 5%">
 			A visit to the tunnels dug during the Vietnam War is a must. Quang Tri is on the former border between North and South Vietnam, where the whole village went underground. I&apos;m sure there are lots of other places where you can visit these tunnels There&apos;s the bridge over to what was South Vietnam and monument over the road. About it really.
 		</p>
 	</div>
-	<div class="infofourtwo colpic2">
+	<div class="infofourtwo colpic2 resinfooneseven resposinfopics">
 		<a href ="quang_tri/quang_tri.html">
 		<img src="quangtri.jpg" title="click for Quang Tri Slide show" class=" solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infofiveone">
+	<div class="infofiveone invis">
 		<img src="doc_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="signature.png" class="sig" height="50" width="200">
 	</div>
