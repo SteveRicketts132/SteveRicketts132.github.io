@@ -80,12 +80,76 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 2%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
 
 
 </style>
 <div>
 	<a href = "https://stevericketts132.github.io/india/india.html">
-	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	<img src="Indian_Service_Logo.png" class="cent resposcrest" title = "home button" alt="india official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Delhi/ Motorbikes and Trains </h1>
@@ -95,47 +159,47 @@
 
 <audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="shimla_slideshow/shimla_slideshow.html">
 		<img src="shimla.jpg" title="Click for shima Slideshow" class="colpic1 solidb" alt="The beautiful Shimla" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
 			<b>Shimla</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			This is the old Raj Summer Capital, from where the Indian Empire was ruled. There are buildings that would not be out of place in Surrey, notably a church and what appears to be a library. There are other once fine buildings, in a state of total disrepair and now home only to monkeys. It is the terminus for the little railway, which appears on tv programmes frequently. A really fascinating city to wonder through.
 
 	</div>
-	<div class = "infotwoone">
-		<p class="inksmall titlepara2">
+	<div class = "infotwoone resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Glamping</b>
 		</p>
 
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resfontsize resposmiddle" style="text-indent: 5%">
 			A one point we stayed in some luxury tents, with ensuite large bucket and jug.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "glamping_slideshow/glamping_slideshow.html">
 		<img src="glamping.jpg" alt="Glamping" title="click for more Glamping " class="solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreeone colpic3">
+	<div class="infothreeone colpic3 resinfoonefive resposinfopics">
 		<img src="dylan.jpg" title="I did n't take any pictures of rupees so here is a cool Bob Dylan inspired Royal Enfield" alt="Indian trains" class=" solidb" height="230" width="270">
 	</div>
 
-	<div class="infothreetwo">
-		<p class="inksmall posinksmall">
+	<div class="infothreetwo resinfoonesix">
+		<p class="inksmall posinksmall restitlepara">
 			<b> Money </b>
-		<p class="paragraph colpara1" style="text-indent: 5%">
+		<p class="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			You cannot get Indian Rupees in the UK, even in Leicester. Apart from at the Indian Airport it is very difficult to find places to exchange sterling into Rupees. Cash machines are few and far between and hit and miss, if they will allow UK bank cards to work.Having exchanged &pound;100 at the airport, the tour company wanted &pound;30 kitty for fuel and a &pound;40 kitty for lunch and chai stops. Leaving &pound;30. Most of the other people on the tour were n the same boat. Borrowing and paying back became the norm. In Kalka, we had a day off and busied ourselves with finding money. I had a very civilized interview with a bank manager, couldn&apos;t exchange any money, but a very pleasant experience. In Manali the problem was solved by the Western Union Office. There were foot high stacks of Rupees waiting to be exchanged for Sterling.
 		</p>
 	</div>
-	<div class="infofourtwo">
+	<div class="infofourtwo invis">
 		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="sachin.jpg" class="sig" height="50" width="200">
 	</div>

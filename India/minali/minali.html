@@ -80,12 +80,77 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: 2%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
+
 
 
 </style>
 <div>
 	<a href = "https://stevericketts132.github.io/india/india.html">
-	<img src="Indian_Service_Logo.png" class="cent" title = "home button" alt="india official crest" height="200" width="200">
+	<img src="Indian_Service_Logo.png" class="cent resposcrest" title = "home button" alt="india official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Minali and roads </h1>
@@ -95,33 +160,34 @@
 
 <audio id = "indian_summer" src = "indian_summer_doors.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="minali_slideshow/minali_slideshow.html">
 		<img src="minali.jpg" title="Click for Minali Slideshow" class="colpic1 solidb" alt="The rohang pass" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
 			<b>Minali</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			As Kibber was the low point then Manali was the high point. It is a former hippy town of 2 halves. Down below is the busy city, up the valley are the bars and night clubs. A very enjoyable night spent listening to a Israeli group playing Oasis. There is always a place your would like to visit again and this was it on this trip. Even fish and chips, the fish being brown trout from the local rivers.
-		<p class="inksmall titlepara2">
+		</p>	
+	</div>
+	<div class = "resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Hotels</b>
 		</p>
-	</div>
-	<div>
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resposmiddle resfontsize" style="text-indent: 5%">
 			I am not sure India gets the international traveller or maybe its just not interested. The hotels varied in standard, but the bathrooms were consistently a health & safety nightmare. Electric cables hang from the ceiling and the shower was a large bucket and a smaller jug. It worked fine.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "hotels_slideshow/hotels_slideshow.html">
 		<img src="hotels.jpg" alt="minali holtel" title= "Classy hotel at the end of the trip" class="solidb" height="230" width="270">
 		</a>
 	</div>
-	<div class="infofourtwo">
+	<div class="infofourtwo invis">
 		<img src="india_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="sachin.jpg" class="sig" height="50" width="200">
 	</div>

@@ -87,10 +87,80 @@
 }
 .doubleb{border-style: double;}
 
+@media screen and (max-width: 700px){
+	.invis{
+		display: none;
+	}
+	.respostitle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.ressizetitle{
+		width: 100%; height: auto;
+	}
+/* wrap for bike picture and top pararagraph*/
+
+	.reswrapinfo{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: minmax<100px, auto);
+	}
+	.resinfooneone{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.resinfoonetwo{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.resinfoonethree{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.resinfoonefour{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.resinfoonefive{
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.resinfoonesix{
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.resinfooneseven{
+		grid-column: 1;
+		grid-row: 7;
+	}
+	.resinfooneeight{
+		grid-column: 1;
+		grid-row: 8;
+	}
+	.resposmiddle{
+		position: relative; top: 0%; left: 0%;
+	}
+	.resfontsize{
+		font-size: 70%;
+	}
+	.resposinfopics{
+		position: relative; top: 0%; left: 10%;
+	}
+	.resposinfotoppic{
+		position: relative; top: -5%; left: -5%;
+	}
+	.restitlepara{
+		position: relative; top: 0%; left: 30%;
+	}
+	.resposcrest{
+		position: relative; top: 0%; left: 25%;
+	}
+}
+
+
 </style>
 <div>
 	<a href="https://stevericketts132.github.io/vietnam/vietnam15.html">
-	<img src="vietnam_crest.jpg" class="cent" title ="home button" alt="vietnam official crest" height="200" width="200">
+	<img src="vietnam_crest.jpg" class="cent resposcrest" title ="home button" alt="vietnam official crest" height="200" width="200">
 	</a>
 </div>
 <h1 class="ink" style = "text-align: center"> Hue-People-Climate and Food </h1>
@@ -100,69 +170,69 @@
 
 <audio id = "paint_it_black" src = "paint_ It_ black.m4a" loop ="loop"></audio>
 
-<div class ="wrapperinfo marg doubleb">
-	<div class ="infooneone">
+<div class ="wrapperinfo marg doubleb reswrapinfo">
+	<div class ="infooneone resinfooneone resposinfotoppic">
 		<a href="hue_slideshow/hue_slideshow.html">
 		<img src="hue.jpg" title="Click for Hue Slideshow" class="colpic1 solidb" alt="hanoi at night" height="230" width="270">
 		</a>
 	</div>
-	<div class="infoonetwo">
-		<p class="inksmall posinksmall"> 
-			<b>Hue - The Former Imperialist Capital</b> 
+	<div class="infoonetwo resinfoonetwo">
+		<p class="inksmall posinksmall restitlepara"> 
+			<b>Hue</b> 
 		</p>
-		<p class ="paragraph colpara1" style="text-indent: 5%">
+		<p class ="paragraph colpara1 resposmiddle resfontsize" style="text-indent: 5%">
 			Hue is the former Imperial capital. Gnoc says the North Vietnamese Army captured the citadel in the Tet Offensive. The gates are scared by shell holes. Here the French influence is strongest. You can get baguettes, but don't mention the French. They seem to have upset the Vietnamese more than the Americans. It is actually nice to be from a nation less despised for once. The River is referred to as the Perfume River due to Joss sticks being burned along its bank. Dragon Boats, made from the steel that the American lined their runways with, sail up and down to the resting place of the Emperors. One of the best theme bars I have been to is the DMZ, in Hue. The seats are oil drums and the lights are shaped light bombs. They play sixties music, to add to the atmosphere. (Click the crest at the top to return to vietnam page)
 		</p>
 		
 	</div>
-	<div class = "infotwoone">
-		<p class="inksmall titlepara2">
+	<div class = "infotwoone resinfoonefour">
+		<p class="inksmall titlepara2 restitlepara">
 			<b>Food-Tasty</b>
 		</p>
 
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resfontsize resposmiddle" style="text-indent: 5%">
 			From Hanoi to Hue we ate what we were given with chopsticks, no other cutlery was offered. It was mostly food that got trapped in your teeth and you spend the morning journey trying to get it out with your tongue. Having succeeded by lunchtime, when you ate lunch and spend the afternoon using your tongue again. Then there was dinner.
 			There wasn&apos;t any food stops along the Western Ho Chi Minh Trail, until we came to a shop. In the corner was a monkey in a small cage. Gnoc was obviously waiting for a comment, when a member of the tour said something, he lunched into <q> You western people are quick to judge us. These man is a ranger and he has recued the monkey from the villagers, He has tried to release the monkey, but it keeps coming back.</q>
 			The ranger&apos;s mother said something to Gnoc in Vietnamese. Gnoc translated it <q>We let the monkey out twice a week and it shits in the kitchen</q>
 			We had chicken noodle soup with a duck egg in it.
 		</p>
 	</div>
-	<div class="infotwotwo colpic2">
+	<div class="infotwotwo colpic2 resinfoonethree resposinfopics">
 		<a href = "food_slideshow/food_slideshow.html">
 		<img src="food.jpg" title="click for food (well pictures)" class="solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreeone colpic3">
+	<div class="infothreeone colpic3 resinfoonefive resposinfopics">
 		<a href ="climate_slideshow/climate_slideshow.html">
 		<img src="climate.jpg" title="click for heat and rain" class=" solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infothreetwo">
-		<p class="inksmall posinksmall">
+	<div class="infothreetwo resinfoonesix">
+		<p class="inksmall posinksmall restitlepara">
 			<b> Climate - Hot</b>
-		<p class="paragraph colpara1" style="text-indent: 5%">
+		<p class="paragraph colpara1 resfontsize resposmiddle" style="text-indent: 5%">
 			Allegedly <q>It's hot! Damn hot! Real hot! Hottest things is my shorts. I could cook things in it.</q>
 			But on my trip it rained from Hanoi to Tan Ky and of course in Khe San, but that just added to the depressive atmosphere of the place.
 			Gnoc liked his motorcycles shiny, so we were sent to the jet wash. The lady operative got carried away and jet washed us.
 			This was fine, but I have developed the minimalist approach to foreign travel meaning one pair of motorcycle jeans, 3 pairs of socks, pants and t shirts, and a down jacket. Hence our hotel was the one with the jeans hanging out the window trying to dry.
 		</p>
 	</div>
-	<div class="infofourone">
-		<p class="inksmall titlepara2">
+	<div class="infofourone resinfooneeight">
+		<p class="inksmall titlepara2 restitlepara">
 			<b> People</b>
-		<p class="paragraph colpara2" style="text-indent: 5%">
+		<p class="paragraph colpara2 resposmiddle resfontsize" style="text-indent: 5%">
 			I checked out this tour company who I spoke to 2 years running at the NEC in Birmingham. Only when I go to Hanoi Airport did I realize it was a Danish company brilliantly run by Kurt.I roomed with Lars, who spoke perfect unaccented English, although he had never been to the UK. He learned English by watching Fawlty Towers, but never mentioned the War. It was the year Leicester City won the Premiership, so I taught him <q>Leicester, we&apos;re not shit any more!</q> The Vietnamese element was organized by Gnoc, who was born in a cave, while the B52 pounded Hanoi.Chi actually led the tour from the front. His claim to fame was he can change a piston in a Minsk in 30 minutes. Which explains why we were riding Hondas!So the comment </q>It&apos;s very difficult to find a Vietnamese man named Charlie. They&apos;re all named Nyugen or Doh or things like that.Is true.</q>
 		</p>
 	</div>
-	<div class="infofourtwo colpic2">
+	<div class="infofourtwo colpic2 resinfooneseven resposinfopics">
 		<a href ="people_slideshow/people_slideshow.html">
 		<img src="people.jpg" title="click for people" class=" solidb" height="230" width="270">
 		</a>
 	</div>
 
-	<div class="infofivetwo">
+	<div class="infofivetwo invis">
 		<img src="doc_stamp.jpg" class="sig" height ="150" width="200">
 		<img src="signature.png" class="sig" height="50" width="200">
 	</div>
